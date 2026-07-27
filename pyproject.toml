@@ -35,6 +35,10 @@ select = [
     "B",
 ]
 
+ignore = [
+    "UP046",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
