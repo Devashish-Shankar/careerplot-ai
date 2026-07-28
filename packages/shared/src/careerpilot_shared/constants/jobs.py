@@ -4,7 +4,7 @@ CareerPilot AI
 
 Shared Package
 
-JSON Type Definitions
+Job Constants
 
 Author: Devashish Shankar
 ==========================================================
@@ -12,10 +12,12 @@ Author: Devashish Shankar
 
 from __future__ import annotations
 
-type JsonPrimitive = str | int | float | bool | None
+from typing import Final
 
-type JsonValue = JsonPrimitive | list["JsonValue"] | dict[str, "JsonValue"]
+DEFAULT_JOB_SEARCH_LIMIT: Final[int] = 50
 
-type JsonObject = dict[str, JsonValue]
+MAX_JOB_SEARCH_LIMIT: Final[int] = 500
 
-type JsonArray = list[JsonValue]
+DEFAULT_MATCH_SCORE: Final[float] = 0.70
+
+DEFAULT_RECOMMENDATION_COUNT: Final[int] = 10

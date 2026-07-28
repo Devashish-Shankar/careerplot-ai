@@ -22,8 +22,7 @@ class SupportsToDict(Protocol):
     into a dictionary.
     """
 
-    def to_dict(self) -> dict[str, Any]:
-        ...
+    def to_dict(self) -> dict[str, Any]: ...
 
 
 @runtime_checkable
@@ -37,5 +36,4 @@ class SupportsFromDict(Protocol):
     def from_dict(
         cls,
         data: dict[str, Any],
-    ) -> SupportsFromDict:
-        ...
+    ) -> SupportsFromDict: ...

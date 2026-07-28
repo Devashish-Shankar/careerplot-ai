@@ -1,0 +1,123 @@
+"""
+==========================================================
+CareerPilot AI
+
+Shared Package
+
+Constants
+
+Author: Devashish Shankar
+==========================================================
+"""
+
+from .ai import (
+    DEFAULT_BATCH_SIZE,
+    DEFAULT_EMBEDDING_DIMENSION,
+    DEFAULT_MAX_TOKENS,
+    DEFAULT_SIMILARITY_THRESHOLD,
+    DEFAULT_TEMPERATURE,
+    DEFAULT_TOP_P,
+)
+from .api import (
+    DEFAULT_BACKOFF_SECONDS,
+    DEFAULT_PAGE_SIZE,
+    DEFAULT_RETRIES,
+    DEFAULT_TIMEOUT,
+    DEFAULT_USER_AGENT,
+    MAX_PAGE_SIZE,
+)
+from .cache import (
+    DEFAULT_CACHE_TTL,
+    EMBEDDING_CACHE_TTL,
+    JOB_CACHE_TTL,
+    LONG_CACHE_TTL,
+    SHORT_CACHE_TTL,
+)
+from .files import (
+    GB,
+    KB,
+    MAX_FILE_SIZE,
+    MAX_RESUME_SIZE,
+    MB,
+    SUPPORTED_DOCUMENT_EXTENSIONS,
+    SUPPORTED_IMAGE_EXTENSIONS,
+)
+from .jobs import (
+    DEFAULT_JOB_SEARCH_LIMIT,
+    DEFAULT_MATCH_SCORE,
+    DEFAULT_RECOMMENDATION_COUNT,
+    MAX_JOB_SEARCH_LIMIT,
+)
+from .regex import (
+    EMAIL_REGEX,
+    GITHUB_REGEX,
+    LINKEDIN_REGEX,
+    PHONE_REGEX,
+    URL_REGEX,
+)
+from .resume import (
+    DEFAULT_RESUME_LANGUAGE,
+    MAX_RESUME_PAGES,
+    MIN_RESUME_TEXT_LENGTH,
+    SUPPORTED_RESUME_EXTENSIONS,
+)
+from .system import (
+    APP_NAME,
+    APP_VERSION,
+    DEFAULT_ENCODING,
+    DEFAULT_TIMEZONE,
+    LOG_FORMAT,
+)
+
+__all__ = [
+    # AI
+    "DEFAULT_BATCH_SIZE",
+    "DEFAULT_EMBEDDING_DIMENSION",
+    "DEFAULT_MAX_TOKENS",
+    "DEFAULT_SIMILARITY_THRESHOLD",
+    "DEFAULT_TEMPERATURE",
+    "DEFAULT_TOP_P",
+    # API
+    "DEFAULT_BACKOFF_SECONDS",
+    "DEFAULT_PAGE_SIZE",
+    "DEFAULT_RETRIES",
+    "DEFAULT_TIMEOUT",
+    "DEFAULT_USER_AGENT",
+    "MAX_PAGE_SIZE",
+    # Cache
+    "DEFAULT_CACHE_TTL",
+    "EMBEDDING_CACHE_TTL",
+    "JOB_CACHE_TTL",
+    "LONG_CACHE_TTL",
+    "SHORT_CACHE_TTL",
+    # Files
+    "GB",
+    "KB",
+    "MB",
+    "MAX_FILE_SIZE",
+    "MAX_RESUME_SIZE",
+    "SUPPORTED_DOCUMENT_EXTENSIONS",
+    "SUPPORTED_IMAGE_EXTENSIONS",
+    # Jobs
+    "DEFAULT_JOB_SEARCH_LIMIT",
+    "DEFAULT_MATCH_SCORE",
+    "DEFAULT_RECOMMENDATION_COUNT",
+    "MAX_JOB_SEARCH_LIMIT",
+    # Regex
+    "EMAIL_REGEX",
+    "GITHUB_REGEX",
+    "LINKEDIN_REGEX",
+    "PHONE_REGEX",
+    "URL_REGEX",
+    # Resume
+    "DEFAULT_RESUME_LANGUAGE",
+    "MAX_RESUME_PAGES",
+    "MIN_RESUME_TEXT_LENGTH",
+    "SUPPORTED_RESUME_EXTENSIONS",
+    # System
+    "APP_NAME",
+    "APP_VERSION",
+    "DEFAULT_ENCODING",
+    "DEFAULT_TIMEZONE",
+    "LOG_FORMAT",
+]

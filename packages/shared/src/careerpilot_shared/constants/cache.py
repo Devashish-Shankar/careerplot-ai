@@ -4,7 +4,7 @@ CareerPilot AI
 
 Shared Package
 
-Primitive Type Aliases
+Cache Constants
 
 Author: Devashish Shankar
 ==========================================================
@@ -12,20 +12,14 @@ Author: Devashish Shankar
 
 from __future__ import annotations
 
-type EmailAddress = str
+from typing import Final
 
-type UrlString = str
+DEFAULT_CACHE_TTL: Final[int] = 3600
 
-type FilePath = str
+SHORT_CACHE_TTL: Final[int] = 300
 
-type DirectoryPath = str
+LONG_CACHE_TTL: Final[int] = 86400
 
-type MimeType = str
+JOB_CACHE_TTL: Final[int] = 1800
 
-type LanguageCode = str
-
-type CountryCode = str
-
-type CurrencyCode = str
-
-type TimeZone = str
+EMBEDDING_CACHE_TTL: Final[int] = 604800
