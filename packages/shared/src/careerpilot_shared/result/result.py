@@ -49,9 +49,7 @@ class Result(Generic[T]):
         has_error = self.error is not None
 
         if has_value == has_error:
-            raise ValueError(
-                "Result must contain either a value or an error, but not both."
-            )
+            raise ValueError("Result must contain either a value or an error, but not both.")
 
     @property
     def is_success(self) -> bool:

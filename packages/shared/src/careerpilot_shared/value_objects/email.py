@@ -19,9 +19,7 @@ from dataclasses import dataclass
 
 from careerpilot_shared.exceptions import ValidationError
 
-_EMAIL_PATTERN = re.compile(
-    r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
-)
+_EMAIL_PATTERN = re.compile(r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$")
 
 
 @dataclass(frozen=True, slots=True)
