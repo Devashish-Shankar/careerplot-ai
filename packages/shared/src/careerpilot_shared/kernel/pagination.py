@@ -21,7 +21,7 @@ from typing import Generic, TypeVar
 T = TypeVar("T")
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class PageRequest:
     """
     Represents a pagination request.
@@ -38,7 +38,7 @@ class PageRequest:
             raise ValueError("Page size must be greater than zero.")
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class PageResult(Generic[T]):
     """
     Represents a paginated result.

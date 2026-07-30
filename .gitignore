@@ -13,6 +13,8 @@ node_modules/
 # IDE
 .vscode/
 .idea/
+.github/
+.ruff_cache/
 
 # OS
 .DS_Store

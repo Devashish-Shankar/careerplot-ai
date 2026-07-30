@@ -45,3 +45,7 @@ testpaths = ["tests"]
 [tool.pyright]
 pythonVersion = "3.12"
 typeCheckingMode = "strict"
+
+extraPaths = [
+    "packages/shared/src",
+]
